@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Shop</title>
-    <!-- google font cdn -->
+    <!-- google font cdn for aDLam -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font cdn for Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome -->
@@ -30,6 +37,9 @@
       .font-aDLam {
         font-family: "ADLaM Display", serif;
       }
+      .font-Sora {
+        font-family: "Sora", serif;
+      }
     </style>
     <script>
       tailwind.config = {
@@ -43,5 +53,47 @@
       };
     </script>
   </head>
-  <body class="font-aDLam"></body>
+  <body class="font-aDLam">
+    <header>
+      <!-- navbar -->
+      <nav
+        class="font-Sora flex justify-between items-center bg-[#FFF9F4] py-4 px-5 lg:px-20"
+      >
+        <!-- leftmost -->
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo-header.png" alt="" />
+          <h2 class="hidden sm:block">
+            Browse <span class="text-[#FFDC26]">4</span> Pets
+          </h2>
+        </div>
+        <!-- second-leftmost  -->
+        <div class="hidden sm:flex">
+          <ul class="flex gap-7">
+            <a href="#"><li>Find a pet</li></a>
+            <a href="#"><li>Breeds</li></a>
+            <a href="#"><li>Contact us</li></a>
+          </ul>
+        </div>
+
+        <!-- rightmost -->
+        <div class="hidden sm:flex gap-5 items-center">
+          <a href="#"><i class="fa-solid fa-bell"></i></a>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button class="px-2 py-1 border border-black rounded-lg">
+            Login
+          </button>
+          <button class="px-2 py-1 bg-[#FFDC26] rounded-lg">Register</button>
+        </div>
+
+        <div class="block sm:hidden">
+          <button>
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
